@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TradeMentorship · Disciplined Trading Education</title>
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- STICKY HEADER -->
+  <header class="sticky-header">
+    <div class="container header-inner">
+      <div class="logo">TradeMentorship</div>
+      <nav class="nav-links">
+        <a href="#" data-page="home">Home</a>
+        <a href="#" data-page="about">About Us</a>
+        <a href="#" data-page="vision">Vision & Mission</a>
+        <a href="#" data-page="news">News</a>
+        <a href="#" data-page="indicators">Indicators</a>
+        <a href="#" data-page="blog">Blog</a>
+        <a href="#" data-page="resources">Resources</a>
+        <a href="#" data-page="contact">Contact</a>
+        <a href="#" data-page="terms">Terms</a>
+        <a href="#" data-page="disclaimer">Disclaimer</a>
+        <a href="#" data-page="team">Our Team</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- LIVE MARKET TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker-items">
+      <span>EUR/USD 1.0872 <span style="color:var(--growth-green);">+0.12%</span></span>
+      <span>BTC/USD 63,450 <span style="color:var(--alert-orange);">-2.3%</span></span>
+      <span>S&P 500 5,102 <span style="color:var(--growth-green);">+0.45%</span></span>
+      <span>OIL 82.30 <span style="color:var(--alert-orange);">-1.1%</span></span>
+      <span>GBP/JPY 189.42 <span style="color:var(--growth-green);">+0.22%</span></span>
+      <span>NASDAQ 17,895 <span style="color:var(--growth-green);">+0.67%</span></span>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main id="page-content"></main>
+
+  <!-- FOOTER - NEW DESIGN -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h2 class="footer-logo">TradeMentorship</h2>
+          <p class="footer-tagline">Empowering traders with expert mentorship, proven strategies, and real-time market analysis.</p>
+          <div class="footer-icons">
+            <span class="footer-icon">📂</span>
+            <span class="footer-icon">💬</span>
+            <span class="footer-icon">📊</span>
+          </div>
+        </div>
+        
+        <div class="footer-divider"></div>
+        
+        <div class="footer-links-section">
+          <h3 class="footer-heading">Quick Links</h3>
+          <div class="footer-links">
+            <a href="#" data-page="home">Home</a>
+            <a href="#" data-page="about">About Us</a>
+            <a href="#" data-page="blog">Blog</a>
+            <a href="#" data-page="news">News</a>
+            <a href="#" data-page="resources">Resources</a>
+          </div>
+        </div>
+        
+        <div class="footer-divider"></div>
+        
+        <div class="footer-copyright">
+          © 2026 TradeMentorship. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PAGE TEMPLATES (hidden) -->
+  <div id="template-store" style="display:none;">
+    <!-- HOME PAGE -->
+    <div id="home-template">
+      <section class="hero-gradient section">
+        <div class="container grid" style="align-items: center;">
+          <div style="grid-column: span 7;">
+            <h1 style="font-size:3.2rem; line-height:1.1;">Welcome to TradeMentorship</h1>
+            <p style="font-size:1.3rem; margin:1.5rem 0; max-width:600px;">A Platform for Disciplined, Rule-Based Trading Education.</p>
+            <p style="margin-bottom:1.5rem;">We believe successful trading is not about predictions or tips, but about process, psychology, and probability. Our mission is to help traders develop clarity, consistency, and confidence through structured learning and rule-based market approaches.</p>
+            <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+              <button class="btn btn-primary">start learning <i class="fas fa-arrow-right"></i></button>
+              <button class="btn btn-secondary">watch demo</button>
+            </div>
+          </div>
+          <div style="grid-column: span 5;">
+            <div class="dashboard-mock">
+              <div style="display:flex; justify-content:space-between;">
+                <span>BTC/USD</span> <span style="color:var(--alert-orange);">63,450</span>
+              </div>
+              <div class="mock-candle">
+                <div class="candle"></div><div class="candle red"></div><div class="candle"></div><div class="candle red"></div><div class="candle"></div>
+              </div>
+              <div style="display:flex; justify-content:space-between; margin-top:1rem;">
+                <span>VOL 2.3k</span> <span>24h +4.2%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section">
+        <h2 style="margin-bottom:2rem; text-align:center;">What We Focus On</h2>
+        <div class="grid" style="gap:2rem;">
+          <div class="card" style="grid-column: span 3;"><i class="fas fa-chart-line" style="color:var(--trust-blue); font-size:2rem;"></i><h3>Market structure & trend alignment</h3></div>
+          <div class="card" style="grid-column: span 3;"><i class="fas fa-clock" style="color:var(--growth-green); font-size:2rem;"></i><h3>Multi-timeframe analysis</h3></div>
+          <div class="card" style="grid-column: span 3;"><i class="fas fa-shield-alt" style="color:var(--alert-orange); font-size:2rem;"></i><h3>Risk management & capital protection</h3></div>
+          <div class="card" style="grid-column: span 3;"><i class="fas fa-brain" style="color:var(--trust-blue); font-size:2rem;"></i><h3>Trading psychology & discipline</h3></div>
+          <div class="card" style="grid-column: span 6;"><i class="fas fa-cogs" style="color:var(--growth-green); font-size:2rem;"></i><h3>Practical trading systems (not signals)</h3></div>
+        </div>
+      </section>
+
+      <section class="container section" style="background:var(--neutral-100); border-radius:3rem; padding:3rem;">
+        <h2>This platform is built for:</h2>
+        <div class="grid" style="margin-top:2rem;">
+          <div class="card" style="grid-column: span 4;">✔ Beginners who want the right foundation</div>
+          <div class="card" style="grid-column: span 4;">✔ Intermediate traders seeking consistency</div>
+          <div class="card" style="grid-column: span 4;">✔ Serious traders aiming to think like a trading desk, not a gambler</div>
+        </div>
+        <p style="text-align:center; margin-top:2rem; font-size:1.3rem; font-weight:600;">No tips. No hype. Only structured market education.</p>
+      </section>
+    </div>
+
+    <!-- ABOUT US -->
+    <div id="about-template">
+      <div class="container section">
+        <h1>About TradeMentorship</h1>
+        <div class="grid" style="margin-top:2rem; gap:2rem;">
+          <div class="card" style="grid-column: span 6;">
+            <i class="fas fa-user-graduate" style="color:var(--trust-blue); font-size:2.5rem;"></i>
+            <h2>Market Student & Mentor</h2>
+            <p>Trade Mentorship is a market student, trading mentor, and system-based trader with a strong belief in process over prediction. With years of experience studying price action, trend behavior, volatility, and trader psychology, our approach is centered around:</p>
+            <ul style="margin-top:1rem; list-style-type: none;">
+              <li><i class="fas fa-check-circle" style="color:var(--growth-green);"></i> Rule-based strategies</li>
+              <li><i class="fas fa-check-circle" style="color:var(--growth-green);"></i> Multi-timeframe trend confirmation</li>
+              <li><i class="fas fa-check-circle" style="color:var(--growth-green);"></i> Risk-defined trading models</li>
+              <li><i class="fas fa-check-circle" style="color:var(--growth-green);"></i> Long-term capital growth mindset</li>
+            </ul>
+          </div>
+          <div class="card" style="grid-column: span 6;">
+            <i class="fas fa-lightbulb" style="color:var(--alert-orange); font-size:2.5rem;"></i>
+            <h2>Our Philosophy</h2>
+            <p>Unlike tip-based or signal-selling platforms, our goal is to teach you how to think, not what to trade. We emphasize:</p>
+            <ul style="margin-top:1rem; list-style-type: none;">
+              <li><i class="fas fa-arrow-right" style="color:var(--trust-blue);"></i> Decision-making over outcomes</li>
+              <li><i class="fas fa-arrow-right" style="color:var(--trust-blue);"></i> Risk control over profit chasing</li>
+              <li><i class="fas fa-arrow-right" style="color:var(--trust-blue);"></i> Consistency over shortcuts</li>
+            </ul>
+            <p style="margin-top:1.5rem;">This platform exists to help traders become self-reliant, disciplined, and emotionally stable in real market conditions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VISION & MISSION -->
+    <div id="vision-template">
+      <div class="container section">
+        <h1>Vision & Mission</h1>
+        <div class="grid" style="margin-top:3rem;">
+          <div class="card" style="grid-column: span 6; background:linear-gradient(145deg, var(--trust-blue) 0%, #0039b3 100%); color:white;">
+            <i class="fas fa-eye" style="font-size:3rem; margin-bottom:1rem;"></i>
+            <h2>Our Vision</h2>
+            <p style="font-size:1.2rem;">To create a global community of disciplined, self-reliant traders who approach markets with clarity, confidence, and consistent methodology — transforming trading from speculation to a professional skill.</p>
+          </div>
+          <div class="card" style="grid-column: span 6; background:linear-gradient(145deg, var(--growth-green) 0%, #00a882 100%); color:white;">
+            <i class="fas fa-bullseye" style="font-size:3rem; margin-bottom:1rem;"></i>
+            <h2>Our Mission</h2>
+            <p style="font-size:1.2rem;">To provide structured, rule-based trading education that emphasizes process over prediction, risk management over profit chasing, and psychological mastery over emotional reaction — without tips, signals, or hype.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEWS PAGE -->
+    <div id="news-template">
+      <div class="container section">
+        <h1>📰 Market News</h1>
+        <div class="grid" style="margin-top:2rem;">
+          <div style="grid-column: span 8;">
+            <div class="grid" style="gap:1.5rem;">
+              <div class="card" style="grid-column: span 4;">
+                <span class="mono" style="color:var(--alert-orange);">BREAKING</span>
+                <h3>Fed Holds Rates Steady</h3>
+                <p>Powell signals potential rate cuts later this year as inflation moderates.</p>
+                <span class="mono">2 hours ago</span>
+              </div>
+              <div class="card" style="grid-column: span 4;">
+                <span class="mono" style="color:var(--growth-green);">MARKETS</span>
+                <h3>Oil Inventories Drop</h3>
+                <p>WTI crude jumps 2% on unexpected supply draw.</p>
+                <span class="mono">5 hours ago</span>
+              </div>
+              <div class="card" style="grid-column: span 4;">
+                <h3>NFP Forecast: 180K Jobs</h3>
+                <p>Non-farm payroll expected to show cooling labor market.</p>
+                <span class="mono">1 day ago</span>
+              </div>
+              <div class="card" style="grid-column: span 4;">
+                <h3>EU Inflation Steady at 2.7%</h3>
+                <p>Core CPI remains sticky, ECB in focus.</p>
+                <span class="mono">1 day ago</span>
+              </div>
+              <div class="card" style="grid-column: span 4;">
+                <h3>BoJ Hints at Policy Shift</h3>
+                <p>USD/JPY volatile after Ueda comments.</p>
+                <span class="mono">2 days ago</span>
+              </div>
+            </div>
+          </div>
+          <div style="grid-column: span 4;">
+            <div class="card">
+              <h4>📅 Economic Calendar</h4>
+              <div class="mono" style="margin-top:1rem;">
+                <div>Wed 10:00 - CPI (MoM)</div>
+                <div>Thu 08:30 - Jobless Claims</div>
+                <div>Fri 13:30 - Nonfarm Payrolls</div>
+              </div>
+            </div>
+            <div class="card" style="margin-top:1rem;">
+              <h4>📊 Key Levels</h4>
+              <div class="mono">
+                <div>S&P 500: 5100-5150</div>
+                <div>EUR/USD: 1.0850-1.0920</div>
+                <div>BTC: $62k-$65k</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INDICATORS PAGE -->
+    <div id="indicators-template">
+      <div class="container section">
+        <h1>📊 Technical Indicators Library</h1>
+        <div class="grid" style="margin-top:2rem;">
+          <div style="grid-column: span 3;">
+            <div class="card" style="text-align:center;">
+              <i class="fas fa-chart-line" style="color:var(--trust-blue); font-size:2rem;"></i>
+              <h3>RSI</h3>
+              <p>Relative Strength Index</p>
+              <span class="mono" style="color:var(--growth-green);">Oversold: &lt;30</span>
+            </div>
+          </div>
+          <div style="grid-column: span 3;">
+            <div class="card" style="text-align:center;">
+              <i class="fas fa-arrows-alt-h" style="color:var(--alert-orange); font-size:2rem;"></i>
+              <h3>MACD</h3>
+              <p>Moving Average Convergence Divergence</p>
+            </div>
+          </div>
+          <div style="grid-column: span 3;">
+            <div class="card" style="text-align:center;">
+              <i class="fas fa-wave-square" style="color:var(--growth-green); font-size:2rem;"></i>
+              <h3>Bollinger Bands</h3>
+              <p>Volatility indicator</p>
+            </div>
+          </div>
+          <div style="grid-column: span 3;">
+            <div class="card" style="text-align:center;">
+              <i class="fas fa-chart-bar" style="color:var(--trust-blue); font-size:2rem;"></i>
+              <h3>Volume Profile</h3>
+              <p>High volume nodes</p>
+            </div>
+          </div>
+        </div>
+        
+        <h2 style="margin-top:3rem;">📈 Candle Pattern Library</h2>
+        <div style="display:flex; gap:0.5rem; margin:2rem 0;" id="candle-filters">
+          <span class="filter-btn active" data-filter="all">all</span>
+          <span class="filter-btn" data-filter="bullish">bullish</span>
+          <span class="filter-btn" data-filter="bearish">bearish</span>
+        </div>
+        <div class="grid" id="candle-grid" style="gap:1rem;">
+          <div class="card bullish" style="grid-column: span 3;"><i class="fas fa-arrow-up" style="color:var(--growth-green);"></i> Hammer <span class="mono">(reversal)</span></div>
+          <div class="card bearish" style="grid-column: span 3;"><i class="fas fa-arrow-down" style="color:var(--alert-orange);"></i> Shooting Star <span class="mono">(top reversal)</span></div>
+          <div class="card bullish" style="grid-column: span 3;"><i class="fas fa-arrow-up" style="color:var(--growth-green);"></i> Bullish Engulfing</div>
+          <div class="card bearish" style="grid-column: span 3;"><i class="fas fa-arrow-down" style="color:var(--alert-orange);"></i> Dark Cloud Cover</div>
+          <div class="card bullish" style="grid-column: span 3;"><i class="fas fa-arrow-up" style="color:var(--growth-green);"></i> Morning Star</div>
+          <div class="card bearish" style="grid-column: span 3;"><i class="fas fa-arrow-down" style="color:var(--alert-orange);"></i> Evening Star</div>
+          <div class="card" style="grid-column: span 3;"><i class="fas fa-minus" style="color:var(--neutral-700);"></i> Doji <span class="mono">(indecision)</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOG -->
+    <div id="blog-template">
+      <div class="container section">
+        <h1>Blog & Trading Insights</h1>
+        <div style="display:flex; gap:0.5rem; margin:2rem 0;" id="blog-filters">
+          <span class="filter-btn active" data-cat="all">all</span>
+          <span class="filter-btn" data-cat="psychology">psychology</span>
+          <span class="filter-btn" data-cat="strategy">strategy</span>
+          <span class="filter-btn" data-cat="risk">risk management</span>
+        </div>
+        <div class="masonry-grid" id="blog-masonry">
+          <div class="masonry-item card strategy"><h4>Breakout Trading Strategy</h4>Entry rules, stop placement, and targets for range breakouts.</div>
+          <div class="masonry-item card psychology"><h4>Mastering Trading Psychology</h4>How to overcome fear and greed in live markets.</div>
+          <div class="masonry-item card risk"><h4>Position Sizing Guide</h4>Calculate risk per trade based on account size.</div>
+          <div class="masonry-item card strategy"><h4>Scalping with Order Flow</h4>Tick charts and volume analysis for quick entries.</div>
+          <div class="masonry-item card psychology"><h4>Overtrading: The Silent Killer</h4>Signs you're trading too much and how to stop.</div>
+          <div class="masonry-item card strategy"><h4>Fibonacci Retracement Secrets</h4>How to use fibs with market structure.</div>
+          <div class="masonry-item card risk"><h4>Max Drawdown: What to Expect</h4>Setting realistic expectations for losing streaks.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESOURCES PAGE -->
+    <div id="resources-template">
+      <div class="container section">
+        <h1>📚 Trading Resources</h1>
+        <div class="grid" style="margin-top:2rem; gap:2rem;">
+          <div class="card" style="grid-column: span 4;">
+            <i class="fas fa-book" style="font-size:2rem; color:var(--trust-blue);"></i>
+            <h3>Beginner's Guide</h3>
+            <p>Complete guide to start your trading journey</p>
+          </div>
+          <div class="card" style="grid-column: span 4;">
+            <i class="fas fa-video" style="font-size:2rem; color:var(--growth-green);"></i>
+            <h3>Video Library</h3>
+            <p>Recorded webinars and tutorials</p>
+          </div>
+          <div class="card" style="grid-column: span 4;">
+            <i class="fas fa-download" style="font-size:2rem; color:var(--alert-orange);"></i>
+            <h3>Trading Templates</h3>
+            <p>Journal templates and checklists</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact-template">
+      <div class="container section">
+        <h1>Contact & Support</h1>
+        <div class="grid" style="margin-top:2rem;">
+          <div style="grid-column: span 6;">
+            <form class="card" style="display:flex; flex-direction:column; gap:1rem;">
+              <input type="text" placeholder="your name" style="padding:1rem; border-radius:60px; border:1px solid var(--neutral-200);">
+              <input type="email" placeholder="email" style="padding:1rem; border-radius:60px;">
+              <select style="padding:1rem; border-radius:60px; border:1px solid var(--neutral-200);">
+                <option>General inquiry</option>
+                <option>Mentorship question</option>
+                <option>Technical support</option>
+              </select>
+              <textarea placeholder="message" rows="4" style="border-radius:28px; padding:1rem;"></textarea>
+              <button class="btn btn-primary" type="button">send message</button>
+            </form>
+          </div>
+          <div style="grid-column: span 6;">
+            <div class="card">
+              <h3>Frequently Asked Questions</h3>
+              <div class="faq-item open" id="faq1">
+                <div class="faq-question" onclick="toggleFaq(this)">Is this a signal service? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">No. We provide education only — no tips, no signals. We teach you how to analyze markets yourself.</div>
+              </div>
+              <div class="faq-item" id="faq2">
+                <div class="faq-question" onclick="toggleFaq(this)">Do I need prior experience? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">Our content ranges from beginner to advanced. We recommend starting with our foundation course.</div>
+              </div>
+              <div class="faq-item" id="faq3">
+                <div class="faq-question" onclick="toggleFaq(this)">Is there a refund policy? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">Full refund within 14 days if you're unsatisfied with the course material.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TERMS & CONDITIONS -->
+    <div id="terms-template">
+      <div class="container section">
+        <h1>Terms & Conditions</h1>
+        <div class="card" style="margin-top:2rem;">
+          <p>By accessing TradeMentorship, you agree to these terms:</p>
+          <h3>1. Educational Purpose Only</h3>
+          <p>All content is for educational purposes only. We do not provide investment advice.</p>
+          <h3>2. No Guarantees</h3>
+          <p>Trading involves risk. Past performance does not guarantee future results.</p>
+          <h3>3. User Responsibility</h3>
+          <p>You are solely responsible for your trading decisions and any losses incurred.</p>
+          <h3>4. Intellectual Property</h3>
+          <p>Course materials may not be redistributed without permission.</p>
+          <h3>5. Amendments</h3>
+          <p>We reserve the right to modify these terms at any time.</p>
+          <p style="margin-top:2rem;"><i>Last updated: January 2025</i></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DISCLAIMER -->
+    <div id="disclaimer-template">
+      <div class="container section">
+        <h1>Risk Disclaimer</h1>
+        <div class="card" style="margin-top:2rem; background:#fff4f0; border-left:4px solid var(--alert-orange);">
+          <p style="font-size:1.2rem; font-weight:600;">Trading in financial markets involves substantial risk and may not be suitable for all investors.</p>
+        </div>
+        <div class="grid" style="margin-top:2rem; gap:2rem;">
+          <div class="card" style="grid-column: span 6;">
+            <h3>Important Points:</h3>
+            <ul style="list-style-type: none;">
+              <li><i class="fas fa-times-circle" style="color:var(--alert-orange);"></i> We do not provide investment advice, tips, or stock recommendations.</li>
+              <li><i class="fas fa-times-circle" style="color:var(--alert-orange);"></i> We are not SEBI-registered investment advisors.</li>
+              <li><i class="fas fa-exclamation-triangle" style="color:var(--alert-orange);"></i> Past performance is not indicative of future results.</li>
+              <li><i class="fas fa-exclamation-triangle" style="color:var(--alert-orange);"></i> Trading and investing involve the risk of capital loss.</li>
+              <li><i class="fas fa-user-check" style="color:var(--growth-green);"></i> You are solely responsible for your trading decisions and outcomes.</li>
+            </ul>
+          </div>
+          <div class="card" style="grid-column: span 6;">
+            <h3>Before trading in:</h3>
+            <div class="grid" style="gap:0.5rem;">
+              <div class="card" style="grid-column: span 6;">📈 Stocks</div>
+              <div class="card" style="grid-column: span 6;">📊 Derivatives</div>
+              <div class="card" style="grid-column: span 6;">💱 Forex</div>
+              <div class="card" style="grid-column: span 6;">🪙 Cryptocurrencies</div>
+            </div>
+            <p style="margin-top:1rem;">you should consult with a qualified financial advisor and trade only with capital you can afford to lose.</p>
+            <p style="margin-top:1rem; font-weight:600;">By using this website, you acknowledge that TradeMentorship and its representatives will not be held responsible for any financial losses incurred.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OUR TEAM -->
+    <div id="team-template">
+      <div class="container section">
+        <h1>Our Team</h1>
+        <div class="grid" style="margin-top:3rem; gap:2rem;">
+          <div class="card" style="grid-column: span 4; text-align:center;">
+            <i class="fas fa-user-circle" style="font-size:4rem; color:var(--trust-blue);"></i>
+            <h3>Alex Morgan</h3>
+            <p>Head Mentor & Founder</p>
+            <p style="margin-top:1rem;">15 years institutional trading experience</p>
+          </div>
+          <div class="card" style="grid-column: span 4; text-align:center;">
+            <i class="fas fa-user-circle" style="font-size:4rem; color:var(--growth-green);"></i>
+            <h3>Sarah Chen</h3>
+            <p>Senior Trading Mentor</p>
+            <p style="margin-top:1rem;">Technical analysis & price action specialist</p>
+          </div>
+          <div class="card" style="grid-column: span 4; text-align:center;">
+            <i class="fas fa-user-circle" style="font-size:4rem; color:var(--alert-orange);"></i>
+            <h3>Marcus Williams</h3>
+            <p>Risk Management Expert</p>
+            <p style="margin-top:1rem;">Former hedge fund risk analyst</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
